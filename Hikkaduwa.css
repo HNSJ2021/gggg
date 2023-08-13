@@ -1,0 +1,385 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white:#eee7e7;
+    --color-black:black;
+    --color-black-1:#f09013;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color:black;
+
+
+}
+
+.menu_bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    text-decoration: none;
+    
+}
+
+.logo{
+    color: var(--color-white);
+    font-size: 30px;
+    text-align: left;
+
+}
+
+.logo span {
+    color:var(--color-primary) ;
+    
+
+}
+
+.menu_bar ul {
+    list-style: none;
+    display: flex;
+
+}
+.menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+    padding: 5px 20px;
+    
+    text-decoration: none;
+
+}
+
+.menu_bar ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover {
+    color: var(--color-primary);
+
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+
+}
+
+.menu_bar ul li:hover .dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+ /* navigation bar*/
+.hero {
+
+    background-image: url(./photos/LSL_B2_Hikkaduwa-Beach_1920x700.jpg);
+    height:calc(100vh - 80px) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 7px 10px #7d9dd8;
+    transition: 0.5s ease-in-out;
+
+}
+
+ /* main img*/
+
+.hellow{
+
+    position:absolute;
+    height:auto;
+    left: 0px;
+    width: 55px;
+    border: 3px solid black;
+
+}
+
+h2{
+    color: #f3f5f7;
+    margin: 50px;
+    text-align: center;
+    
+}
+
+p{
+    margin: 15px;
+}
+
+ /* paragraphs*/
+
+img{
+
+    width: 350px;
+    height: 200px;
+   border: #c92626;
+    margin-top:30px;
+    margin: 20px;
+}
+
+ /* images*/
+
+.cover{
+    width: 1321px;
+    height: 700px;
+    background: black;
+    margin-top: 20px;
+    display: flex;
+    color: #f7eeee;
+    margin: 20px;
+}
+
+.box{
+    width: 1500px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: -1px 0 10px 0000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align:center;
+}
+
+ /* box border*/
+h1{
+
+    
+    color: rgba(14, 236, 25, 0.377);
+    text-align: center;
+  
+}
+
+ /* title*/
+
+
+.container{
+
+    width: 100%;
+    height:250px;
+    margin-top: 50px;
+    border:5px solid rgba(26, 24, 24, 0.411);
+    border-radius: 8px;
+    
+}
+
+ /* google map*/
+
+.icon img{
+
+    height:40px;
+    width: 40px;
+    margin-left: 5px;
+    margin: 5px;
+    
+ }
+
+
+ .booknow{
+
+text-align: center;
+color: #0073ff;
+margin: 40px;
+margin-right: 600px;
+}
+
+ 
+ 
+ .icon{
+     margin-left: 600px;
+ }
+ /* icons*/
+.sticky-footer{
+
+    position: sticky;
+    top: 100%;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer{
+    background: rgba(45, 158, 173, 0.836);
+    padding: 70px 0;
+    border-top-left-radius:30%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+
+    width: 25%;
+    padding: 0  15px;
+
+}
+
+.footer-col  h4{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col  h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #f09013;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul ul {
+    list-style: none;
+
+}
+
+.footer-col ul ul li{
+
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-col ul ul li a:hover{
+    color: #eee7e7;
+    padding-left: 6px;
+}
+
+
+.booknow{
+
+    width: 30%;
+    height: 30px;
+
+    border-radius: 30px;
+    font-size: 20px;;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    text-align: center;
+    background: #f50940;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
+    align-items: center;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-left: 35%;
+    text-decoration: none;
+}
+
+.booknow:hover{
+    background-color: #0073ff;
+}
+
+
+
+
+ @media only screen and (max-width: 1000px) {
+    .menu_bar ul {
+        flex-direction: column;
+    }
+    .menu_bar ul li {
+        padding: 5px 0;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .menu_bar {
+        padding: 0 2%;
+    }
+    .icon {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .hero {
+        height: calc(100vh - 80px);
+    }
+    .hellow {
+        width: 40px;
+    }
+    h2 {
+        margin: 20px;
+    }
+    img {
+        width: 300px;
+        height: 150px;
+        margin-top: 20px;
+        margin: 10px;
+    }
+    .cover {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        color: #f7eeee;
+        margin: 20px;
+    }
+    .box {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        text-align: center;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .container {
+        height: 200px;
+    }
+    .icon img {
+        height: 30px;
+        width: 30px;
+        margin-left: 3px;
+        margin: 3px;
+    }
+    .booknow {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .footer-col {
+        width: 50%;
+    }
+    .booknow {
+        margin-top: 5%;
+        margin-left: 25%;
+    }
+}
